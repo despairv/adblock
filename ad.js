@@ -122,7 +122,7 @@ twitch-videoad.js text/javascript
                                                     if (e.data.value.includes('original')) {
                                                         e.data.value = OriginalVideoPlayerQuality;
                                                         if (IsPlayerAutoQuality) {
-                                                            e.data.value = '1080p';
+                                                            e.data.value = 'source';
                                                         }
                                                     }
                                                     if (e.data.value.includes('160p')) {
