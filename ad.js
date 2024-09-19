@@ -104,8 +104,8 @@ twitch-videoad.js text/javascript
                             if (OriginalVideoPlayerQuality == null) {
                                 OriginalVideoPlayerQuality = currentQuality;
                             }
-                            if (!currentQuality.includes('1080') || e.data.value != null) {
-                                if (!OriginalVideoPlayerQuality.includes('1080')) {
+                            if (!currentQuality.includes('360') || e.data.value != null) {
+                                if (!OriginalVideoPlayerQuality.includes('360')) {
                                     var settingsMenu = document.querySelector('div[data-a-target="player-settings-menu"]');
                                     if (settingsMenu == null) {
                                         var settingsCog = document.querySelector('button[data-a-target="player-settings-button"]');
@@ -122,7 +122,7 @@ twitch-videoad.js text/javascript
                                                     if (e.data.value.includes('original')) {
                                                         e.data.value = OriginalVideoPlayerQuality;
                                                         if (IsPlayerAutoQuality) {
-                                                            e.data.value = 'source';
+                                                            e.data.value = 'auto';
                                                         }
                                                     }
                                                     if (e.data.value.includes('160p')) {
